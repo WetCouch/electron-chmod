@@ -6,5 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.4.15"
   }
 }
