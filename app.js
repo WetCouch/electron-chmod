@@ -30,7 +30,7 @@ class Permission {
 
     toNum(str) {
         let num = str.split("");
-        let count = 0;
+        let count =  0;
         let part = 0;
         let newArr = [];
         if(num.length > 9) {
@@ -70,3 +70,16 @@ let strVal = document.getElementById('strVal');
 function convertNum () {
     strVal.value = perm.toStr(numVal.value);
 }
+
+function convertStr () {
+    numVal.value = perm.toNum(strVal.value);
+}
+
+new Vue({
+    el: '#app',
+    data: {
+        permss: []
+    }
+
+
+});
