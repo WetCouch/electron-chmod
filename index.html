@@ -10,29 +10,29 @@
 <div id="app">
 <ul>
     <h2>Owner</h2>
-    <li><input type="checkbox" name="permission" value="read"> Read</li>
-    <li><input type="checkbox" name="permission" value="write"> Write</li>
-    <li><input type="checkbox" name="permission" value="execute"> Execute</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="read1"> Read</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="write1"> Write</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="execute1"> Execute</li>
 </ul>
 <ul>
     <h2>Group</h2>
-    <li><input type="checkbox" name="permission" value="read"> Read </li>
-    <li><input type="checkbox" name="permission" value="write"> Write</li>
-    <li><input type="checkbox" name="permission" value="execute"> Execute</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="read2"> Read </li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="write2"> Write</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="execute2"> Execute</li>
 </ul>
 <ul>
     <h2>Public</h2>
-    <li><input type="checkbox" name="permission" value="read"> Read </li>
-    <li><input type="checkbox" name="permission" value="write"> Write</li>
-    <li><input type="checkbox" name="permission" value="execute"> Execute</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="read3"> Read </li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="write3"> Write</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="execute3"> Execute</li>
 </ul>
 <div>
     <ul>
-        <li><input type="text" id="numVal" placeholder="number value"></li>
+        <li><input type="text" id="numVal" v-bind:value="mesNum" placeholder="number value">{{calculate()}}</li>
         <li><input type="button" value="Convert" id="fromNum" onclick="convertNum()"></li>
     </ul>
     <ul>
-        <li><input type="text" id="strVal" placeholder="string value"></li>
+        <li><input type="text" id="strVal" v-bind:value="mesStr" placeholder="string value"></li>
         <li><input type="button" value="Convert" onclick="convertStr()"></li>
     </ul>
 </div>
