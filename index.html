@@ -28,15 +28,16 @@
 </ul>
 <div>
     <ul>
-        <li><input type="text" id="numVal" v-bind:value="mesNum" placeholder="number value">{{calculate()}}</li>
+        <li><input type="text" id="numVal" v-bind:value="calToNum()" placeholder="number value"></li>
         <li><input type="button" value="Convert" id="fromNum" onclick="convertNum()"></li>
     </ul>
     <ul>
-        <li><input type="text" id="strVal" v-bind:value="mesStr" placeholder="string value"></li>
+        <li><input type="text" id="strVal" v-bind:value="calToStr()" placeholder="string value"></li>
         <li><input type="button" value="Convert" onclick="convertStr()"></li>
     </ul>
 </div>
 </div>
+
 
 <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
 <script src="app.js"></script>
