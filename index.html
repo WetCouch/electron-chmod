@@ -28,12 +28,12 @@
 </ul>
 <div>
     <ul>
-        <li><input type="text" id="numVal" v-bind:value="mesNum" placeholder="number value">{{calculate()}}</li>
-        <li><input type="button" value="Convert" id="fromNum" onclick="convertNum()"></li>
+        <li><input type="text" id="numVal" v-model="mesNum" placeholder="number value"></li>
+        <li><input type="button" value="Convert" id="fromNum" v-on:click="calcMesNum()" ></li>
     </ul>
     <ul>
-        <li><input type="text" id="strVal" v-bind:value="mesStr" placeholder="string value"></li>
-        <li><input type="button" value="Convert" onclick="convertStr()"></li>
+        <li><input type="text" id="strVal" v-model="mesStr" placeholder="string value"></li>
+        <li><input type="button" value="Convert" v-on:click="calcMesStr()"></li>
     </ul>
 </div>
 </div>
