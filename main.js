@@ -1,6 +1,3 @@
-/**
- * Created by wetcouch on 07.02.2017.
- */
 const electron = require('electron');
 const app = electron.app;
 
@@ -11,7 +8,7 @@ const BrowserWindow = electron.BrowserWindow;
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({width: 800, height: 600});
+    win = new BrowserWindow({width: 900, height: 700});
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),

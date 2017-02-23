@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <title>Permission converter</title>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Chmod Permissions</h1>
+<h1>Chmod Calculator</h1>
 <div id="app">
+    <div class="chboxes">
 <ul>
     <h2>Owner</h2>
-    <li><input type="checkbox" name="permission" v-model="permss" value="read1"> Read</li>
-    <li><input type="checkbox" name="permission" v-model="permss" value="write1"> Write</li>
-    <li><input type="checkbox" name="permission" v-model="permss" value="execute1"> Execute</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="read1" id="read1"><label for="read1">Read</label></li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="write1" id="write1"><label for="write1">Write</label></li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="execute1" id="execute1"><label for="execute1">Execute</label></li>
 </ul>
 <ul>
     <h2>Group</h2>
-    <li><input type="checkbox" name="permission" v-model="permss" value="read2"> Read </li>
-    <li><input type="checkbox" name="permission" v-model="permss" value="write2"> Write</li>
-    <li><input type="checkbox" name="permission" v-model="permss" value="execute2"> Execute</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="read2" id="read2"><label for="read2">Read</label></li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="write2" id="write2"><label for="write2">Write</label></li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="execute2" id="execute2"><label for="execute2">Execute</label></li>
 </ul>
 <ul>
     <h2>Public</h2>
-    <li><input type="checkbox" name="permission" v-model="permss" value="read3"> Read </li>
-    <li><input type="checkbox" name="permission" v-model="permss" value="write3"> Write</li>
-    <li><input type="checkbox" name="permission" v-model="permss" value="execute3"> Execute</li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="read3" id="read3"><label for="read3">Read</label></li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="write3" id="write3"><label for="write3">Write</label></li>
+    <li><input type="checkbox" name="permission" v-model="permss" value="execute3" id="execute3"><label for="execute3">Execute</label></li>
 </ul>
-<div>
-    <ul>
-        <li><input type="text" id="numVal" v-model="mesNum" placeholder="number value"></li>
-        <li><input type="button" value="Convert" id="fromNum" v-on:click="calcMesNum()" ></li>
-    </ul>
-    <ul>
-        <li><input type="text" id="strVal" v-model="mesStr" placeholder="string value"></li>
-        <li><input type="button" value="Convert" v-on:click="calcMesStr()"></li>
-    </ul>
+    </div>
+<div class="inputs">
+    <h2>Permissions:</h2>
+    <input type="text" id="numVal" v-model="mesNum" placeholder="number value">
+    <input type="text" id="strVal" v-model="mesStr" placeholder="string value">
 </div>
 </div>
 
