@@ -115,6 +115,4 @@ let app = new Vue({
             this.calcMesNum();
         }
     }
-
-
 });
